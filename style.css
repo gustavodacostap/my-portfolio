@@ -1,0 +1,280 @@
+/* Estilizações gerais */
+
+html {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Barra de navegação */
+
+nav {
+    padding: 2rem 6rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    font-size: 1.8rem;
+}
+
+nav li {
+    list-style: none;
+    transition: all 0.25s;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Seção inicial */
+
+.avatar {
+    border-radius: 100%;
+    width: 24rem;
+    height: 24rem;
+    margin-right: 10rem;
+}
+
+.main-description {
+    margin: 4rem 0;
+}
+
+#start {
+    background-color: #162340;
+    padding-bottom: 5rem;
+}
+
+.button {
+    border-radius: 0.2rem;
+    background-color: #0039CC;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* Seção formação */
+
+#education {
+    background-color: #162340;
+}
+
+/* Seção projetos */
+
+.project {
+    margin: 4rem 0;
+}
+
+.project-image {
+    width: 24rem;
+    height: 18rem;
+    margin-right: 2.5rem;
+    border-radius: 0.6rem;
+}
+
+#projects .items-center:hover {
+    border-radius: 0.6rem;
+    background-color: #3f3f3f;
+    transition: background-color .3s;
+}
+
+#projects a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Seção contato */
+
+.contact {
+    padding-bottom: 3.5rem;
+    background-color: #162340;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.8rem;
+}
+
+form input, form textarea {
+    font-family: inherit;
+    padding: 1rem;
+    margin-bottom: 1.8rem;
+    border-radius: 0.6rem;
+    outline: none;
+    border: 0;
+    width: 50%;
+}
+
+form textarea {
+    margin-bottom: 3rem;
+}
+
+button {
+    border-radius: 0.2rem;
+    background-color: #0039CC;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+     max-width: fit-content;
+    min-width: fit-content;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+/* Rodapé */
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+footer, section {
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+footer {
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+footer img {
+    width: 3rem;
+    height: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Transições */
+
+nav li:hover {
+    transform: scale(1.15);
+}
+
+.button:hover {
+    background-color: #002ea3;
+}
+
+#projects .items-center {
+    transition: background-color 0.3s;
+}
+
+.footer-social a {
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    transform: translateY(-0.7rem);
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    .items-center {
+        flex-direction: column;
+    }
+
+    footer, section {
+        padding: 4rem;
+    }
+
+    footer {
+        padding-bottom: 2rem;
+    }
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main-title {
+        font-size: 3.5rem;
+    }
+
+    .project-image {
+        margin-right: 0;
+        width: 36rem;
+        height: auto;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    form input, form textarea {
+        font-family: inherit;
+        padding: 1rem;
+        margin-bottom: 1.8rem;
+        border-radius: 0.6rem;
+        outline: none;
+        border: 0;
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    .avatar {
+        margin-right: 0;
+        width: 18rem;
+        height: 18rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    nav li {
+        transition: none;
+    }
+
+    .button {
+        transition: none;
+    }
+    
+    #projects .items-center {
+        transition: none;
+    }
+    
+    .footer-social a {
+        transition: none;
+    }
+}
